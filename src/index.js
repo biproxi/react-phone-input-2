@@ -459,6 +459,7 @@ class PhoneInput extends React.Component {
 
   // Put the cursor to the end of the input (usually after a focus event)
   cursorToEnd = () => {
+    console.log('Library numberInputRef:', this.numberInputRef);
     const input = this.numberInputRef;
     if (!input) return;
     input.focus();
@@ -616,7 +617,7 @@ class PhoneInput extends React.Component {
       freezeSelection: true,
       formattedNumber
     }, () => {
-      this.cursorToEnd();
+      // this.cursorToEnd();
       if (this.props.onChange) this.props.onChange(formattedNumber.replace(/[^0-9]+/g,''), this.getCountryData(), e, formattedNumber);
     });
   }
