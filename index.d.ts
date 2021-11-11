@@ -54,6 +54,7 @@ declare module "@biproxi/react-phone-input-2" {
   export interface PhoneInputProps extends PhoneInputEventsProps, Style {
     country?: string | number;
     value?: string | null;
+    ref: object | null;
 
     onlyCountries?: string[];
     preferredCountries?: string[];

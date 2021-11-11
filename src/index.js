@@ -103,6 +103,7 @@ class PhoneInput extends React.Component {
   static defaultProps = {
     country: '',
     value: '',
+    ref: {},
 
     onlyCountries: [],
     preferredCountries: [],
