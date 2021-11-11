@@ -160,7 +160,7 @@ class PhoneInput extends React.Component {
     showDropdown: false,
 
     isValid: true, // (value, selectedCountry, onlyCountries, hiddenAreaCodes) => true | false | 'Message'
-    defaultErrorMessage: '',
+    defaultErrorMessage: 'Invalid phone number',
     specialLabel: 'Phone',
 
     onEnterKeyPress: null, // null or function
