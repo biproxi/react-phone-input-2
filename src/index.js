@@ -630,7 +630,7 @@ class PhoneInput extends React.Component {
       }
     }
 
-    this.setState({ placeholder: '' });
+    // this.setState({ placeholder: '' });
 
     this.props.onFocus && this.props.onFocus(e, this.getCountryData());
     this.props.jumpCursorToEnd && setTimeout(this.cursorToEnd, 0);
