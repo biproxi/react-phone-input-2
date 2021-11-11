@@ -107,7 +107,7 @@ class PhoneInput extends React.Component {
     preferredCountries: [],
     excludeCountries: [],
 
-    placeholder: '1 (702) 123-4567',
+    placeholder: '1 (XXX)XXX-XXXX',
     searchPlaceholder: 'search',
     searchNotFound: 'No entries to show',
     flagsImagePath: './flags.png',
@@ -615,7 +615,7 @@ class PhoneInput extends React.Component {
       freezeSelection: true,
       formattedNumber
     }, () => {
-      // this.cursorToEnd();
+      this.cursorToEnd();
       if (this.props.onChange) this.props.onChange(formattedNumber.replace(/[^0-9]+/g,''), this.getCountryData(), e, formattedNumber);
     });
   }
@@ -630,7 +630,7 @@ class PhoneInput extends React.Component {
       }
     }
 
-    // this.setState({ placeholder: '' });
+    this.setState({ placeholder: '' });
 
     this.props.onFocus && this.props.onFocus(e, this.getCountryData());
     this.props.jumpCursorToEnd && setTimeout(this.cursorToEnd, 0);
