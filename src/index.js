@@ -16,6 +16,7 @@ class PhoneInput extends React.Component {
       PropTypes.number
     ]),
     value: PropTypes.string,
+    ref: PropTypes.object,
 
     onlyCountries: PropTypes.arrayOf(PropTypes.string),
     preferredCountries: PropTypes.arrayOf(PropTypes.string),
